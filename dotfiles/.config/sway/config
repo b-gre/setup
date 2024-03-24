@@ -23,7 +23,7 @@ set $rofi_cmd rofi \
 set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 
 set $background /usr/share/backgrounds/default-dark.png
-set $lock swaylock --image $background --daemonize
+set $lock swaylock
 set $suspend systemctl suspend
 set $browser flatpak run org.mozilla.firefox
 ### Output configuration
@@ -206,7 +206,7 @@ bindsym $mod+b exec $browser
 bindsym $mod+Shift+m exec pavucontrol
 bindsym $mod+Shift+b exec blueman-manager
 bindsym $mod+L exec $lock
-bindsym $mod+F12 exec $lock & $suspend
+bindsym $mod+F12 exec "$lock & $suspend"
 
 bindsym $mod+Alt+Space exec playerctl --player spotify play-pause
 

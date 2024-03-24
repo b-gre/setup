@@ -14,3 +14,4 @@
     xdg-settings set default-web-browser org.mozilla.firefox.desktop
     ```
 * [git stuff](notes/git.md)
+* [Scansnap S1300i driver](notes/scansnap.md)
